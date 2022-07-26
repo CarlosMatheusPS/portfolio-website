@@ -142,11 +142,27 @@ img {
     justify-content: center;
     column-gap: .75rem;
 }
-.profile__social-link{
+
+.profile__social-link {
     font-size: 1.25rem;
     color: var(--title-color);
     transition: .3s;
 }
+
+.profile__social-link:hover {
+    color: var(--first-color);
+}
+
+.profile__info {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.profile__info-group {
+    text-align: center;
+}
+
 /* ========== BUTTONS ==========  */
 /* ========== FILTER TABS ==========  */
 /* ========== PROJECTS ==========  */
