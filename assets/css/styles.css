@@ -102,18 +102,20 @@ img {
     width: 100px;
     height: 100px;
     background: linear-gradient(180deg, hsla(var(--hue), var(--sat), var(--lig), 1) 0%,
-                                        hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
+            hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
-.profile__perfil img{
-    width: 75px;
+
+.profile__perfil img {
+    width: 85px;
     border-radius: 50%;
 }
-.profile__border{
+
+.profile__border {
     border: 3.5px solid var(--first-color);
     justify-self: center;
     width: 115px;
@@ -124,6 +126,27 @@ img {
     margin-bottom: .75rem;
 }
 
+.profile__name {
+    font-size: var(--h2-font-size);
+}
+
+.profile__profession {
+    font-size: var(--smaller-font-size);
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.profile__social {
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+}
+.profile__social-link{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: .3s;
+}
 /* ========== BUTTONS ==========  */
 /* ========== FILTER TABS ==========  */
 /* ========== PROJECTS ==========  */
