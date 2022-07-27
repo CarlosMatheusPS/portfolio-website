@@ -349,11 +349,11 @@ img {
 
 /* ========== Hide and Show projects & skills ==========  */
 
-.filters [data-content] {
+.disabled {
     display: none;
 }
 
-.filters__active [data-content] {
+.enabled {
     display: grid;
 }
 
