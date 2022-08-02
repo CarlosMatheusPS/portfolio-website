@@ -79,6 +79,7 @@
     </header>
     <!-- ========== MAIN ========== -->
     <main class="main">
+
         <section class="filters container">
             <ul class="filters__content">
                 <button class="filters__button filter-tab-active" data-target="#projects">
@@ -302,6 +303,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- ========== FORM CONTACT ========== -->
+
+        <section class="contact__form">
+            <form action="https://formsubmit.co/carlosmatheuscso@gmail.com" method="POST" class="form-contact"
+                target="_blank">
+                <div class="title__form">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="half">
+                    <div class="item">
+                        <label>Name:</label>
+                        <input type="text" name="name" required placeholder=" Digite seu nome...">
+                    </div>
+                    <div class="item">
+                        <label>Email:</label>
+                        <input type="email" name="email" required placeholder=" Digite seu email...">
+                    </div>
+                </div>
+                <div class="full">
+                    <label>Fale comigo!</label>
+                    <textarea name="mensagem" required placeholder=" Qual sua mensagem?"></textarea>
+                </div>
+                <div class="action">
+                    <button type="submit">✉️ Send message </button>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </section>
+
     </main>
     <!-- ========== SCROLLREVEAL ========== -->
     <script src=""></script>
