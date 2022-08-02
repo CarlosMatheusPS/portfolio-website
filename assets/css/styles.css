@@ -426,6 +426,69 @@ body.dark-theme {
     background-color: hsl(var(--hue), 8%, 44%);
 }
 
+/* ========== FORM CONTACT ========== */
+
+form {
+    margin: auto;
+    max-width: 576px;
+    padding: 55px 35px;
+}
+
+form .title__form h2 {
+    display: inline-block;
+    letter-spacing: 0.375rem;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+}
+
+form .half {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .half .item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.625rem;
+    width: 48%;
+}
+
+form label {
+    display: block;
+    font-size: var(--normal-font-size);
+    margin-bottom: 1rem;
+}
+
+form .half .item input {
+    padding: 1rem;
+    width: 100%;
+    height: 45px;
+    font-size: var(--normal-font-size);
+}
+
+form .full {
+    margin-bottom: 1.5rem;
+}
+
+form .full textarea {
+    padding: 0.75rem 1rem;
+    width: 100%;
+    height: 170px;
+    font-size: var(--normal-font-size);
+}
+
+form .action {
+    margin-bottom: 2rem;
+}
+
+form .action button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: var(--h2-font-size);
+    font-weight: 300;
+}
+
 /* ========== BREAKPOINTS ==========  */
 /* For small devices */
 @media screen and (max-width:320px) {
@@ -449,6 +512,16 @@ body.dark-theme {
 }
 
 /* For medium devices */
+@media (max-width:480px) {
+    form .half {
+        flex-direction: column;
+    }
+
+    form .half .item {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:576px) {
     .projects__content {
         grid-template-columns: 332px;
@@ -472,6 +545,7 @@ body.dark-theme {
         justify-content: center;
         column-gap: 3rem;
     }
+
 }
 
 /* For large devices */
