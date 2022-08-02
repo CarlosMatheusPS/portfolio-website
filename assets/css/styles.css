@@ -3,6 +3,7 @@
 
 /* ========== VARIABLES ==========  */
 :root {
+    /*Colors*/
     --hue: 207;
     --sat: 90%;
     --lig: 61%;
@@ -123,7 +124,6 @@ body.dark-theme {
     max-width: 968px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-    margin: auto;
 }
 
 .grid {
@@ -159,7 +159,6 @@ body.dark-theme {
 }
 
 .profile__perfil img {
-    width: 85px;
     border-radius: 50%;
 }
 
@@ -468,8 +467,71 @@ body.dark-theme {
     .skills__content {
         grid-template-columns: repeat(2, 332px);
     }
-    .skills__content{
+
+    .skills__content {
         justify-content: center;
         column-gap: 3rem;
     }
+}
+
+/* For large devices */
+@media screen and (min-width:992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .change-theme {
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .profile {
+        padding-top: 4rem;
+    }
+
+    .profile__border {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 1rem;
+    }
+
+    .profile__perfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile__perfil img {
+        width: 90px;
+    }
+
+    .profile__profession {
+        margin-bottom: 1.5rem;
+    }
+
+    .profile__info {
+        column-gap: 3rem;
+    }
+
+    .profile__info-description {
+        font-size: var(--small-font-size);
+    }
+
+    .profile__buttons {
+        column-gap: 2rem;
+    }
+
+    .projects__content {
+        gap: 2rem 3rem;
+    }
+
+    .projects__modal {
+        padding: 1.5rem;
+    }
+
+    .skills__title {
+        font-size: var(--normal-font-size);
+        margin-bottom: 2.5rem;
+    }
+
 }
