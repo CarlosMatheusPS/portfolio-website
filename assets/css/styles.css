@@ -432,6 +432,7 @@ form {
     margin: auto;
     max-width: 576px;
     padding: 55px 35px;
+    margin-top: 2rem;
 }
 
 form .title__form h2 {
@@ -461,14 +462,24 @@ form label {
 
 form .half .item input,
 .full textarea {
+    background-color: var(--body-color);
     border-bottom: 1px solid #e7e8e9;
     border-width: 0 0 1px 0;
+    color: var(--title-color);
+    font-size: 1rem;
+}
+
+form .half .item input::placeholder,
+.full textarea::placeholder {
+    font-size: 1rem;
+    color: var(--title-color);
+    font-family: Helvetica, sans-serif;
 }
 
 form .half .item input:focus,
 .full textarea:focus {
     outline: 0;
-    border: 1px solid black;
+    border: 1px solid var(--first-color);
     border-width: 0 0 1px 0;
 }
 
