@@ -459,6 +459,19 @@ form label {
     margin-bottom: 1rem;
 }
 
+form .half .item input,
+.full textarea {
+    border-bottom: 1px solid #e7e8e9;
+    border-width: 0 0 1px 0;
+}
+
+form .half .item input:focus,
+.full textarea:focus {
+    outline: 0;
+    border: 1px solid black;
+    border-width: 0 0 1px 0;
+}
+
 form .half .item input {
     padding: 1rem;
     width: 100%;
@@ -475,6 +488,7 @@ form .full textarea {
     width: 100%;
     height: 170px;
     font-size: var(--normal-font-size);
+    resize: none;
 }
 
 form .action {
@@ -487,6 +501,10 @@ form .action button {
     cursor: pointer;
     font-size: var(--h2-font-size);
     font-weight: 300;
+}
+
+form .action button:hover {
+    border-bottom: 2px solid black;
 }
 
 /* ========== BREAKPOINTS ==========  */
